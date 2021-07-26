@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row py-3">
+  <div class="col-12">
+  <h3 class="text-center text-info">FAÇA AQUI O SEU CADASTRO</h3>
+  <form class="mt-5" (ngSubmit)='cadastro()' [formGroup]='formCadastro'>
+  <div class="form-group py-3">
+  <input type="text" class="form-control" placeholder="ID" formControlName='id'>
+  </div>
+  <div class="form-group py-3">
+  <input type="text" class="form-control" placeholder="NAME" formControlName='name'>
+  </div>
+  <div class="form-group py-3">
+  <input type="text" class="form-control" placeholder="USER" formControlName='user'>
+  </div>
+  <div class="form-group py-3">
+  <input type="text" class="form-control" placeholder="PASSWORD" formControlName='password'>
+  </div>
+  <div class="form-group py-3">
+    <input type="text" class="form-control" placeholder="CONFIRM PASSWORD" formControlName='passwordConfirm'>
+    </div>
+  <button type="submit" class="btn btn-primary btn-lg">Cadastrar</button>
+  <button type="submit" class="btn btn-success btn-lg direita" (click)="registrar()">Voltar</button>
+  </form>
+  </div>
+  </div>
+  </div>

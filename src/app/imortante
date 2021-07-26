@@ -1,0 +1,2 @@
+npm install -g @angular/cli@latest
+npm install -g json-server

@@ -1,0 +1,18 @@
+<!-- criamos aqui o nosso MENU -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand">Sistema Angular</a>
+<div class="collapse navbar-collapse">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a [routerLink]="['./cliente']" class="nav-link">Cliente</a>
+    </li>
+    <li class="nav-item">
+      <a [routerLink]="['./usuario']" class="nav-link">Usuário</a>
+    </li>
+    <li>
+      <button (click)="sair()" class="btn btn-danger btn-block">Sair</button>
+    </li>
+  </ul>
+</div>
+</nav>
+<router-outlet></router-outlet><!-- Usar router-outlet-> sempre que trabalhamos com rotas -->
